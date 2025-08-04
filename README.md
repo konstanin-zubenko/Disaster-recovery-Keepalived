@@ -11,8 +11,9 @@
 
 Ответ:
 
-![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived'/blob/main/img/69.png)
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/69.png)
 
+![Схема решения](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/1-hsrp_advanced_Netology.pkt)
 
 
 ### Задание 2
@@ -25,6 +26,7 @@
 
 Ответ:
 
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/69.png)
 
 
 

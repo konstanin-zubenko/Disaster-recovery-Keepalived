@@ -11,6 +11,7 @@
 
 Ответ:
 
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived'/blob/main/img/69.png)
 
 
 

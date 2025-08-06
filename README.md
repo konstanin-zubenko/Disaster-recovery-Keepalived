@@ -71,6 +71,8 @@
 Использованы следующие файлы стартовой страницы сервера, конфигурации и скрипта.
 
 
-![страница nginx ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/index.nginx-debian.html) 
-![конфигурационный файл  ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/keepalived.conf) 
-![скрипт  ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/ppcheck.sh) 
+![страница nginx](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/index.nginx-debian.html) 
+
+![конфигурационный файл](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/keepalived.conf) 
+
+![скрипт](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/ppcheck.sh) 

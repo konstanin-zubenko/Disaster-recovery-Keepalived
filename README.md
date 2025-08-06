@@ -26,7 +26,52 @@
 
 Ответ:
 
-![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/69.png)
+Запустим 2 виртуальные машины (192.168.0.14, 192.168.0.16), установим на них Keepalived, настроим конфигурационные файлы. Проверим работу сервисов и резервирование виртуального адреса (192.168.0.15) на ВМ - master.
 
 
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/75.png)
 
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/76.png)
+
+![alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/77.png)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/78.png)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/79.png)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/80.png)
+
+Установим nginx на обеих ВМ, изменим текст страницы по умолчанию, чтобы было понятно к какому серверу получен доступ (ip).
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/81.png)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/82.png)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/83.png)
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/84.png)
+
+
+Создадим bash-скрипт, укажем его в конфигурационном файле Keepalived ,дополним конфигурационный файл блоком глобальных настроек с указанием пользователя скрипта, а также помменяем права на скрипт.
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/90.png)
+
+Перезапустим Keepalived на обеих ВМ, проверим статус.
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/91.png)
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/92.png)
+
+Удалим файл index.nginx-debian.html с ВМ-Master (192.168.0.14), проверим работу скрипта, запустив его через терминал.
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/93.png)
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/94.png)
+
+Проверим перенос виртуального IP (192.168.0.15) на другой сервер (192.168.0.16)
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/95.png)
+
+Использованы следующие файлы стартовой страницы сервера, конфигурации и скрипта.
+
+[alt text](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/img/95.png)
+
+  [страница nginx ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/index.nginx-debian.html) 
+[конфигурационный файл  ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/keepalived.conf) 
+ [скрипт  ](https://github.com/konstanin-zubenko/Disaster-recovery-Keepalived/blob/main/ppcheck.sh) 
